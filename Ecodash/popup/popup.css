@@ -24,7 +24,7 @@
 
 body {
   width: 340px;
-  height: 500px;
+  height: 520px;
   margin: 0;
   padding: 16px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -68,6 +68,12 @@ header {
   margin-bottom: 20px;
 }
 
+header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+}
+
 header h1 {
   margin: 0;
   font-size: 18px;
@@ -83,7 +89,6 @@ header h1 {
   font-weight: 700;
   color: var(--primary);
   line-height: 1;
-  margin: 8px 0;
 }
 
 .counter .label {
@@ -117,28 +122,20 @@ header h1 {
 }
 
 .chart-container {
-  height: 220px;
+  height: 180px;
   margin: 8px 0;
 }
 
-.breakdown {
+.breakdown, .ai-section {
   background: var(--card-bg);
   border-radius: 12px;
   padding: 16px;
   margin-top: 16px;
 }
 
-.breakdown h3 {
+.breakdown h3, .ai-section h3 {
   margin: 0 0 12px 0;
   font-size: 15px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.breakdown svg {
-  width: 16px;
-  height: 16px;
 }
 
 #percentage-list {
@@ -171,4 +168,19 @@ header h1 {
   width: 50px;
   text-align: right;
   font-weight: 600;
+}
+
+#ai-tips {
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.footer {
+  font-size: 11px;
+  color: var(--text-light);
+  text-align: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoDash</title>
+  <title>EcoDash AI</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
@@ -14,8 +14,8 @@
 
   <div id="content">
     <header>
-      <img src="../icons/icon.png" alt="EcoDash Logo" width="32" height="32">
-      <h1>EcoDash</h1>
+      <img src="../icon.png" alt="EcoDash" width="32" height="32">
+      <h1>EcoDash AI</h1>
     </header>
 
     <div class="counter">
@@ -30,18 +30,24 @@
 
     <div class="chart-container">
       <canvas id="co2-chart"></canvas>
-      <div id="chart-fallback" style="display: none;">
-        <p>Chart visualization unavailable</p>
-      </div>
     </div>
 
     <div class="breakdown">
-      <h3>Service Breakdown</h3>
+      <h3>📊 Service Breakdown</h3>
       <div id="percentage-list"></div>
+    </div>
+
+    <div class="ai-section">
+      <h3>🤖 AI Recommendations</h3>
+      <div id="ai-tips"></div>
+    </div>
+
+    <div class="footer">
+      Updated: <span id="update-time">Just now</span>
     </div>
   </div>
 
-  <script src="../chart.min.js"></script>
+  <script src="chart.min.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

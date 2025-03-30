@@ -1,32 +1,40 @@
 {
   "manifest_version": 3,
-  "name": "EcoDash",
-  "version": "1.0",
-  "description": "Track your digital carbon footprint",
+  "name": "EcoDash AI",
+  "version": "3.0",
+  "description": "Track and optimize your digital carbon footprint with AI",
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": {
-      "16": "icons/icon.png",
-      "32": "icons/icon.png",
-      "48": "icons/icon.png",
-      "128": "icons/icon.png"
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
     }
   },
   "icons": {
-    "16": "icons/icon.png",
-    "32": "icons/icon.png",
-    "48": "icons/icon.png",
-    "128": "icons/icon.png"
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module" // Only include if using ES modules
   },
   "permissions": [
     "storage",
     "tabs",
     "alarms"
   ],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "host_permissions": [
+    "https://api.groq.com/*"
+  ],
   "content_security_policy": {
     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
-  }
+  },
+  "web_accessible_resources": [{
+    "resources": ["popup/chart.min.js"],
+    "matches": []
+  }]
 }
