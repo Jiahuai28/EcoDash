@@ -12,7 +12,7 @@ const CO2_RATES = {
   GENERAL: 0.0033
 };
 
-const GROQ_API_KEY = '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'; // Replace with actual key
+const GROQ_API_KEY = 'api_key'; // Replace with actual key
 const AI_CONFIG = {
   MODEL: 'llama-3.3-70b-versatile',
   TEMPERATURE: 0.8,
